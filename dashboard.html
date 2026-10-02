@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard • QuizNova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-page">
+<header class="dashboard-topbar">
+    <a class="logo" href="index.html">QUIZNOVA</a>
+
+    <div class="dashboard-user">
+        <div id="dashboardAvatar" class="avatar">U</div>
+        <span id="dashboardName">Loading...</span>
+        <button class="logout-btn" type="button">Log out</button>
+    </div>
+</header>
+
+<main class="dashboard">
+    <section class="welcome">
+        <div>
+            <div id="dashboardRole" class="eyebrow">DASHBOARD</div>
+            <h1>Ready to make a quiz?</h1>
+            <p>Create quizzes, host live games, and manage your QuizNova activity.</p>
+        </div>
+        <a href="host.html" class="btn primary">+ Create Quiz</a>
+    </section>
+
+    <section class="dashboard-grid">
+        <a href="host.html" class="dashboard-card create-card">
+            <span class="card-icon yellow">✦</span>
+            <h2>Create a quiz</h2>
+            <p>Build questions, answers, and a live game.</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="player.html" class="dashboard-card">
+            <span class="card-icon purple">🎮</span>
+            <h2>Join a game</h2>
+            <p>Enter a game code and start playing.</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="#" class="dashboard-card">
+            <span class="card-icon purple">📊</span>
+            <h2>Results</h2>
+            <p>See scores and performance from your games.</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="#" class="dashboard-card">
+            <span class="card-icon yellow">📝</span>
+            <h2>My quizzes</h2>
+            <p>Manage the quizzes you have created.</p>
+            <span class="card-arrow">→</span>
+        </a>
+    </section>
+
+    <section class="recent-section">
+        <div class="section-heading">
+            <div>
+                <div class="eyebrow">RECENT ACTIVITY</div>
+                <h2>Your recent quizzes</h2>
+            </div>
+        </div>
+
+        <div class="empty-state">
+            <div class="empty-icon">✦</div>
+            <h3>No quizzes yet</h3>
+            <p>Create your first quiz and it will appear here.</p>
+            <a href="host.html" class="btn secondary">Create your first quiz</a>
+        </div>
+    </section>
+</main>
+
+<script type="module" src="auth-firebase.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAKPsc_FRRSiBHv9rHiKUqZ8Eqi2NJiOg4",
+  apiKey: "AIzaSyCcpi2Km9H7J-cmH7NKhIMly_dDIuEEeok",
   authDomain: "cintabahasa-2f893.firebaseapp.com",
   projectId: "cintabahasa-2f893",
   storageBucket: "cintabahasa-2f893.firebasestorage.app",

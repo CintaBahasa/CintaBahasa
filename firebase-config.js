@@ -3,13 +3,13 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAKPsc_FRRSiBHv9rHiKUqZ8Eqi2NJiOg4",
-  authDomain: "cintabahasa-2f893.firebaseapp.com",
-  projectId: "cintabahasa-2f893",
-  storageBucket: "cintabahasa-2f893.firebasestorage.app",
-  messagingSenderId: "337251773603",
-  appId: "1:337251773603:web:d832492226271b642ee316",
-  measurementId: "G-94DXG0834S"
+  apiKey: "AIzaSyCcpi2Km9H7J-cmH7NKhIMly_dDIuEEeok",
+  authDomain: "cintabahasa-6002d.firebaseapp.com",
+  projectId: "cintabahasa-6002d",
+  storageBucket: "cintabahasa-6002d.firebasestorage.app",
+  messagingSenderId: "874719111870",
+  appId: "1:874719111870:web:52b2452e112880b93e8cef",
+  measurementId: "G-D9JRXSHF5R"
 };
 
 const app = initializeApp(firebaseConfig);

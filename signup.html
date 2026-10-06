@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar • CintaBahasa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+<main class="auth-shell">
+    <a class="auth-back" href="index.html">← Kembali</a>
+    <a class="auth-logo" href="index.html">CINTABAHASA</a>
+    <section class="auth-card">
+        <div class="auth-mark">✦</div>
+        <div class="eyebrow">BUAT AKUN</div>
+        <h1>Bergabung dengan CintaBahasa</h1>
+        <p class="auth-subtitle">Buat akun CintaBahasa dan mulai menggunakan platform kuis online.</p>
+        <form id="signupForm">
+            <label for="signupName">Nama</label>
+            <input id="signupName" type="text" placeholder="Nama kamu" required>
+
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" placeholder="kamu@contoh.com" required>
+
+            <label for="signupPassword">Kata Sandi</label>
+            <div class="password-wrap">
+                <input id="signupPassword" type="password" placeholder="Minimal 6 karakter" required>
+                <button type="button" class="eye-password" data-target="signupPassword" aria-label="Tampilkan kata sandi">
+                    <span class="eye-icon">◉</span>
+                </button>
+            </div>
+
+            <label>Peran</label>
+            <div class="role-grid">
+                <label class="role-option selected">
+                    <input type="radio" name="role" value="student" checked>
+                    <span class="role-icon">🎓</span>
+                    <span class="role-copy"><strong>Siswa</strong><small>Ikuti kuis</small></span>
+                    <span class="role-check">✓</span>
+                </label>
+                <label class="role-option">
+                    <input type="radio" name="role" value="teacher">
+                    <span class="role-icon">📚</span>
+                    <span class="role-copy"><strong>Guru</strong><small>Buat kuis</small></span>
+                    <span class="role-check">✓</span>
+                </label>
+            </div>
+
+            <button class="btn primary wide" type="submit" style="margin-top:18px;">Buat Akun</button>
+            <p id="signupMessage" class="message"></p>
+        </form>
+        <p class="switch-auth">Sudah punya akun? <a href="login.html" class="auth-link">Masuk</a></p>
+    </section>
+    <p class="auth-footer">CintaBahasa • Kuis jadi seru.</p>
+</main>
+<script type="module" src="auth-ui.js"></script>
+</body>
+</html>

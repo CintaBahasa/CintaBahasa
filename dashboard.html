@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor • CintaBahasa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-page">
+<header class="dashboard-topbar">
+    <a class="logo" href="index.html">CINTABAHASA</a>
+
+    <div class="dashboard-user">
+        <div id="dashboardAvatar" class="avatar">U</div>
+        <span id="dashboardName">Akun Kamu</span>
+        <button class="logout-btn" type="button">Keluar</button>
+    </div>
+</header>
+
+<main class="dashboard">
+    <section class="welcome">
+        <div>
+            <div id="dashboardRole" class="eyebrow">DASBOR</div>
+            <h1>Siap membuat kuis?</h1>
+            <p>Buat kuis, menjadi host, dan kelola aktivitas CintaBahasa kamu.</p>
+        </div>
+        <a href="host.html" class="btn primary">+ Buat Kuis</a>
+    </section>
+
+    <section class="dashboard-grid">
+        <a href="host.html" class="dashboard-card create-card">
+            <span class="card-icon yellow">✦</span>
+            <h2>Buat kuis</h2>
+            <p>Buat pertanyaan, jawaban, dan permainan secara langsung.</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="player.html" class="dashboard-card">
+            <span class="card-icon purple">🎮</span>
+            <h2>Gabung permainan</h2>
+            <p>Masukkan kode permainan dan mulai bermain.</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+    </section>
+
+    <section id="my-quizzes" class="recent-section dashboard-data-section">
+        <div class="section-heading">
+            <div>
+                <div class="eyebrow">KUIS SAYA</div>
+                <h2>Kuis yang kamu buat</h2>
+            </div>
+        </div>
+        <div id="myQuizzesList" class="dashboard-list"></div>
+    </section>
+
+    <section id="results" class="recent-section dashboard-data-section">
+        <div class="section-heading">
+            <div>
+                <div class="eyebrow">HASIL</div>
+                <h2>Hasil kuis</h2>
+            </div>
+        </div>
+        <div id="resultsList" class="dashboard-list"></div>
+    </section>
+</main>
+
+<script type="module" src="auth-ui.js"></script>
+<script type="module" src="dashboard.js"></script>
+</body>
+</html>

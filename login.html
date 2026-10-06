@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk • CintaBahasa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+<main class="auth-shell">
+    <a class="auth-back" href="index.html">← Kembali</a>
+    <a class="auth-logo" href="index.html">CINTABAHASA</a>
+
+    <section class="auth-card">
+        <div class="auth-mark">✦</div>
+        <div class="eyebrow">SELAMAT DATANG KEMBALI</div>
+        <h1>Masuk ke CintaBahasa</h1>
+        <p class="auth-subtitle">Masuk untuk membuat, menjadi host, dan mengikuti kuis.</p>
+
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="email" placeholder="kamu@contoh.com" autocomplete="email" required>
+
+            <label for="loginPassword">Kata Sandi</label>
+            <div class="password-wrap">
+                <input id="loginPassword" type="password" placeholder="Kata sandi kamu" autocomplete="current-password" required>
+                <button type="button" class="eye-password" data-target="loginPassword" aria-label="Tampilkan kata sandi">
+                    <span class="eye-icon">◉</span>
+                </button>
+            </div>
+
+            <div class="auth-row">
+                <label class="remember">
+                    <input id="rememberMe" type="checkbox">
+                    <span>Ingat saya</span>
+                </label>
+                <a href="forgot-password.html" class="auth-link">Lupa kata sandi?</a>
+            </div>
+
+            <button class="btn primary wide" type="submit">Masuk</button>
+            <p id="loginMessage" class="message"></p>
+        </form>
+<p class="switch-auth">
+            Belum punya akun?
+            <a href="signup.html" class="auth-link">Daftar</a>
+        </p>
+    </section>
+
+    <p class="auth-footer">CintaBahasa • Kuis jadi seru.</p>
+</main>
+
+<script type="module" src="auth-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabung Kuis • CintaBahasa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="logo" href="index.html">CINTABAHASA</a>
+        <a class="back-link" href="dashboard.html">← Kembali ke Dasbor</a>
+    </header>
+
+    <main class="player-page">
+        <section id="joinView" class="panel player-card">
+            <div class="eyebrow">MODE PEMAIN</div>
+            <h1>Gabung kuis</h1>
+            <p class="muted">Masukkan kode permainan dan nama kamu untuk bergabung.</p>
+            <input id="gameCodeInput" class="code-input" maxlength="6" placeholder="KODE PERMAINAN">
+            <input id="playerNameInput" maxlength="20" placeholder="Nama kamu">
+            <button id="joinBtn" class="btn primary wide">Gabung Permainan</button>
+            <p id="joinMessage" class="message"></p>
+        </section>
+
+        <section id="articleView" class="panel article-view hidden">
+            <div class="eyebrow">BACA SEBELUM KUIS</div>
+            <h1 id="playerArticleTitle">Article</h1>
+            <div id="playerArticleContent" class="article-content"></div>
+            <div class="article-actions">
+                <p class="muted">Baca artikel dengan saksama sebelum melanjutkan ke kuis.</p>
+                <button id="articleDoneBtn" class="btn primary wide" type="button">Saya sudah selesai membaca</button>
+            </div>
+        </section>
+
+        <section id="waitingView" class="panel player-card hidden">
+            <div class="waiting-orb">✓</div>
+            <div class="eyebrow">KAMU SUDAH BERGABUNG</div>
+            <h1>Menunggu host...</h1>
+            <p class="muted">Kamu bergabung sebagai <strong id="joinedName"></strong>.</p>
+            <div class="mini-code" id="joinedCode"></div>
+        </section>
+
+        <section id="playView" class="panel hidden">
+            <div class="quiz-top">
+                <span id="playerProgress">Pertanyaan 1 / 5</span>
+                <span id="playerTimer">30</span>
+            </div>
+            <h1 id="playerQuestion"></h1>
+            <div id="playerAnswers" class="answer-grid"></div>
+            <p id="answerMessage" class="message"></p>
+        </section>
+
+        <section id="scoreView" class="panel player-card hidden">
+            <div class="waiting-orb">★</div>
+            <div class="eyebrow">SKOR KAMU</div>
+            <div id="finalScore" class="big-score">0</div>
+            <h1 id="finalPlayerName"></h1>
+            <p class="muted">Kerja bagus! Host dapat melihat papan peringkat akhir.</p>
+            <a class="btn secondary wide" href="dashboard.html">Kembali ke Dasbor</a>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script type="module" src="player.js"></script>
+</body>
+</html>
